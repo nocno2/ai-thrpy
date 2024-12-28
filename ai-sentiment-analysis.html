@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analysis - $THRPY</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #e0e0e0;
+            color: #333333;
+            overflow-y: auto;
+        }
+
+        @keyframes aurora {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .background-aurora {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(173, 216, 230, 0.6), rgba(152, 251, 152, 0.7));
+            background-size: 200% 200%;
+            animation: aurora 15s infinite ease-in-out;
+            filter: blur(20px);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #555555;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #777777;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2em;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #555555;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-aurora"></div>
+    <header>
+        <h1>AI Sentiment Analysis</h1>
+        <p>Discover how advanced AI algorithms analyze market sentiment to support better decision-making.</p>
+    </header>
+
+    <section class="content">
+        <h2>About AI Sentiment Analysis</h2>
+        <p>AI Sentiment Analysis is a powerful tool designed to interpret and evaluate market sentiment by analyzing vast amounts of data from various sources. This feature empowers investors to make data-driven decisions while considering the emotional context of the market.</p>
+        <p>Leveraging cutting-edge technology, AI Sentiment Analysis identifies patterns and trends, providing actionable insights that align with your investment strategies.</p>
+        <a href="index.html" class="back-link">Back to Main Page</a>
+    </section>
+</body>
+</html>
