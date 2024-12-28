@@ -6,7 +6,7 @@
     <title>$THRPY - Crypto Mental Wellness</title>
     <meta property="og:title" content="$THRPY - Crypto Mental Wellness">
     <meta property="og:description" content="A revolutionary platform combining mental wellness tools with advanced crypto analytics. Take control of your investments while maintaining emotional balance.">
-    <meta name="twitter:image" property="og:image" content="https://www.ai-thrpy.xyz/assets/images/og-image.png">
+    <meta property="og:image" content="https://www.ai-thrpy.xyz/assets/images/og-image.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ai-thrpy.xyz">
     <style>
@@ -99,11 +99,13 @@
             padding: 20px;
         }
         .card {
-            background: #e0e0e0;
+            background: linear-gradient(145deg, #ffffff, #ffffff);
             padding: 30px;
             border-radius: 15px;
             box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
         }
         .card:hover {
             transform: translateY(-5px);
@@ -118,22 +120,31 @@
             font-size: 1.1em;
             color: #777777;
         }
-        .card a {
-            display: block;
+        .card .details-section {
+            max-height: 0;
+            overflow: hidden;
+            background: inherit;
+            padding: 0 20px;
+            border-top: 1px solid #ccc;
+            border-radius: 0 0 15px 15px;
+            box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .card.open .details-section {
+            max-height: 300px;
+            padding: 20px;
+        }
+        .card .button {
             margin-top: 15px;
-            text-decoration: none;
+            cursor: pointer;
+            font-size: 1em;
             color: #555555;
-            font-weight: bold;
-            background: rgba(173, 216, 230, 0.8);
-            padding: 10px 15px;
-            text-align: center;
-            border-radius: 10px;
-            transition: background 0.3s, color 0.3s;
+            /* text-decoration: underline; */
+            transition: color 0.3s;
         }
-        .card a:hover {
-            background: rgba(152, 251, 152, 0.8);
+        /* .card .toggle:hover {
             color: #333333;
-        }
+        } */
         .card .coming-soon {
             display: block;
             margin-top: 15px;
@@ -163,6 +174,18 @@
             color: #333333;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.card').forEach(card => {
+                const toggle = card.querySelector('.button');
+                if (toggle) {
+                    toggle.addEventListener('click', () => {
+                        card.classList.toggle('open');
+                    });
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="background-aurora"></div>
@@ -179,7 +202,7 @@
             <div class="card">
                 <h3>AI Sentiment Analysis</h3>
                 <p>Track and analyze market sentiment with advanced AI algorithms.</p>
-                <a href="ai-sentiment-analysis.html">Learn More</a>
+                <a class="button" href="ai-sentiment-analysis.html">Learn More</a>
             </div>
             <div class="card">
                 <h3>Smart Portfolio Tracking</h3>
@@ -209,20 +232,33 @@
         </div>
     </section>
 
+
     <section class="phases">
         <h2>Development Journey</h2>
         <div class="grid">
             <div class="card">
                 <h3>Phase 1: Foundation</h3>
                 <p>Community building, token launch, and basic sentiment analysis.</p>
+                <div class="button">Read More</div>
+                <div class="details-section">
+                    <p>In this phase, we focus on establishing the foundational elements of our platform, including launching the $THRPY token and initial community building efforts. Basic sentiment analysis tools are also rolled out to enable users to gain early insights into market trends.</p>
+                </div>
             </div>
             <div class="card">
                 <h3>Phase 2: Growth</h3>
                 <p>Advanced sentiment analysis and enhanced features.</p>
+                <div class="button">Read More</div>
+                <div class="details-section">
+                    <p>The growth phase introduces advanced sentiment analysis tools powered by AI, along with enhanced features designed to improve user experience. Community expansion and feature updates will be a key focus in this phase.</p>
+                </div>
             </div>
             <div class="card">
                 <h3>Phase 3: Expansion</h3>
                 <p>Mobile app launch, cross-chain compatibility, and AI integration.</p>
+                <div class="button">Read More</div>
+                <div class="details-section">
+                    <p>The expansion phase includes the launch of a mobile app for better accessibility, cross-chain compatibility to cater to diverse blockchain ecosystems, and deep integration of AI-driven tools for personalized insights.</p>
+                </div>
             </div>
         </div>
     </section>
