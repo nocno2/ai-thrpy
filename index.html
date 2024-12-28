@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$THRPY - Crypto Mental Wellness</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #e0e0e0;
+            color: #333333;
+            overflow-y: auto;
+        }
+
+        @keyframes aurora {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .background-aurora {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.7), rgba(173, 216, 230, 0.6), rgba(152, 251, 152, 0.7));
+            background-size: 200% 200%;
+            animation: aurora 15s infinite ease-in-out;
+            filter: blur(20px);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 1px;
+            color: #555555;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #777777;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 25px;
+            font-size: 1em;
+            color: #555555;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+        .features, .phases {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .features h2, .phases h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #555555;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .card {
+            background: #e0e0e0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.3), -12px -12px 20px rgba(255, 255, 255, 0.8);
+        }
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #555555;
+        }
+        .card p {
+            font-size: 1.1em;
+            color: #777777;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.8);
+            color: #777777;
+            margin-top: 40px;
+            position: relative;
+            z-index: 10;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        footer a {
+            color: #555555;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-aurora"></div>
+    <header>
+        <h1>$THRPY</h1>
+        <p>Take a Break from Crypto Drama</p>
+        <a href="https://t.me/ThrpyAiChat" class="button">Join Community</a>
+        <a href="https://app.hypurr.fun/launch/1884" class="button">Learn More</a>
+    </header>
+
+    <section class="features">
+        <h2>Platform Features</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AI Sentiment Analysis</h3>
+                <p>Track and analyze market sentiment with advanced AI algorithms.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Portfolio Tracking</h3>
+                <p>Monitor your investments while maintaining emotional balance.</p>
+            </div>
+            <div class="card">
+                <h3>Market Insights</h3>
+                <p>Data-driven analysis with mental health considerations.</p>
+            </div>
+            <div class="card">
+                <h3>Community Rewards</h3>
+                <p>Earn $THRPY tokens for positive contributions.</p>
+            </div>
+            <div class="card">
+                <h3>Support Network</h3>
+                <p>Connect with like-minded traders and investors.</p>
+            </div>
+            <div class="card">
+                <h3>Mindfulness Tools</h3>
+                <p>Meditation and stress management resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="phases">
+        <h2>Development Journey</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Phase 1: Foundation</h3>
+                <p>Community building, token launch, and basic sentiment analysis.</p>
+            </div>
+            <div class="card">
+                <h3>Phase 2: Growth</h3>
+                <p>Advanced sentiment analysis and enhanced features.</p>
+            </div>
+            <div class="card">
+                <h3>Phase 3: Expansion</h3>
+                <p>Mobile app launch, cross-chain compatibility, and AI integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Therapy ($THRPY). All rights reserved. <a href="https://x.com/AiThrpyonHL">Twitter</a> | <a href="https://t.me/ThrpyAiChat">Telegram</a></p>
+    </footer>
+</body>
+</html>
